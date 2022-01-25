@@ -2,20 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz Challenge</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css"> 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Coding Quiz Challenge</h1>
-    <p>
-        Try to answer the following code-related questions within the time limit.  
-        Keep in mind that incorrect answers will penalize your score time by 10 seconds!
-    </p>
-    <h2>View Highscores</h2>
-    <h2>Time :</h2>
-    <button>Start Quiz</button>
+    <!-- Navbar with "View Highscores" link and timer display-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">View Highscores<span class="sr-only">(current)</span></a>
+            </li>
+            </ul>
+            <span id="timerDisplay" class="navbar-text">
+            Time: 
+            </span>
+            <span id="count" class="navbar-text">30</span>  seconds
+        </div>
+    </nav>
+
+    <!-- Intro screen with "Start Quiz" button -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Coding Quiz Challenge</h1>
+            <p class="lead">Try to answer the following code-related questions within the time limit.</p>  
+            <p class="lead">Keep in mind that incorrect answers will penalize your score time by 10 seconds!</p>
+            <hr class="my-4">
+            <p class="lead">
+                <a id="startClock" class="btn btn-primary btn-lg custom-button" href="#" role="button">Start Quiz</a>
+            </p>
+    </div>
+  
+     <script src="script.js"></script>
 </body>
 </html>

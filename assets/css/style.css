@@ -14,3 +14,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+div.hidden_div {
+    visibility: hidden;
+    display: none;
+}
+
+div.shown_div {
+    visibility: visible;
+}
